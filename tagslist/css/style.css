@@ -3,9 +3,6 @@
 	padding: 0;
 	font: 16px Arial;
 }
-.description {
-	font: 9px "Calibri Light";
-}
 input {
 	float: left;
 	padding: 5px;
@@ -89,7 +86,7 @@ input[type='submit']:hover {
 	color: #D1371F;
 	display: none;
 	top: 7px;
-	right: -115px;
+	right: -135px;
 	font-size: 15px;
 	position: absolute;
 }
