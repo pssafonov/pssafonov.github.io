@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	font: 16px Arial;
+}
+input {
+	float: left;
+	padding: 5px;
+}
+input:focus {
+	outline: none;
+}
+input[type='text'] {
+	width: 400px;
+}
+input[type='submit'] {
+	background: #166BEC;
+	border: 2px solid #166BEC;
+	color: #fff;
+}
+input[type='submit']:hover {
+	background: #005DEA;
+	border-color: #005DEA;
+	cursor: pointer;
+}
+.container {
+	margin: 40px auto;
+	position: relative;
+	width: 505px;
+}
+.clear-list {
+	background: #D74731;
+	cursor: pointer;
+	color: white;
+	position: absolute;
+	top: 0;
+	right: 7px;
+	font-size: 12px;
+	padding: 3px 5px;
+}
+
+.clear-list:hover {
+	background: #D1371F;
+}
+.toggle, .wrap {
+	margin-top: 10px;
+}
+.toggle span {
+	cursor: pointer;
+}
+.toggle span {
+	border-bottom: 1px dashed blue;
+}
+.wrap {
+	position: relative;
+}
+.wrap:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.hide {
+	display: none;
+}
+.tag-list {
+	margin: 10px 0;
+}
+.tag {
+	background: grey;
+	color: white;
+	display: inline-block;
+	padding: 1px 0px 2px 4px;
+	margin: 0 5px 5px 0px;
+}
+.tag span {
+	font-size: 13px;
+}
+.remove-tag {
+	cursor: pointer;
+	padding-right: 5px;
+}
+.tag-text {
+	padding-right: 4px;
+}
+.warning-message {
+	color: #D1371F;
+	display: none;
+	top: 7px;
+	right: -115px;
+	font-size: 15px;
+	position: absolute;
+}
