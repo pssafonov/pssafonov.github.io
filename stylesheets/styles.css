@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
-
+.description {
+  font: 14px "Calibri Light";
+  margin-bottom: 5px;
+}
 body {
   padding:50px;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -9,7 +12,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
-  margin:0 0 20px;
+  margin:0 0 5px;
 }
 
 p, ul, ol, table, pre, dl {
@@ -26,6 +29,7 @@ h1 {
 
 h2 {
   color:#393939;
+  margin:25px 0 5px;
 }
 
 h3, h4, h5, h6 {

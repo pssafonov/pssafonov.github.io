@@ -58,7 +58,7 @@
 		}
 		//Создание DOM для tag-list
 	TagList.prototype.buildTagList = function(node) {
-		node.html('<div class = "clear-list">Очистить</div><div class="toggle"><span>Завершить редактирование</span></div><div class="tag-list"></div><div class="wrap"><div class="warning-message"></div><input type="text"><input type="submit" value="Добавить"></div>');
+		node.html('<div class = "clear-list">Clear</div><div class="toggle"><span>Finish editing</span></div><div class="tag-list"></div><div class="wrap"><div class="warning-message"></div><input type="text"><input type="submit" value="Add"></div>');
 	};
 	//Метод Скрыть/Показать режим редактирования
 	TagList.prototype.showHide = function() {
@@ -66,12 +66,12 @@
 		$('.toggle span', _thisNode).on('click', function() {
 			$('.wrap', _thisNode).toggleClass('hide');
 			var textToggle = $('.toggle span', _thisNode).get(0).innerText;
-			if (textToggle === 'Просмотр') {
-				$('.toggle span', _thisNode).get(0).innerText = 'Завершить редактирование';
+			if (textToggle === 'Edit tags') {
+				$('.toggle span', _thisNode).get(0).innerText = 'Finish editing';
 				$('.remove-tag', _thisNode).css('display', 'inline-block');
 				$('.clear-list', _thisNode).css('display', 'block');
 			} else {
-				$('.toggle span', _thisNode).get(0).innerText = 'Просмотр';
+				$('.toggle span', _thisNode).get(0).innerText = 'Edit tags';
 				$('.remove-tag', _thisNode).css('display', 'none');
 				$('.clear-list', _thisNode).css('display', 'none');
 			}
@@ -103,14 +103,14 @@
 			this.buildTag(this.tagTextTrimmed);
 		} else if (this.tagTextTrimmed === '') {
 			//Вывод предупреждения о занятом имени
-			$('.warning-message', _thisNode).get(0).innerText = 'введите текст';
+			$('.warning-message', _thisNode).get(0).innerText = 'Enter text';
 			$('.warning-message', _thisNode).css('display', 'block');
 			_this.hideWarningTimout = setTimeout(function() {
 				$('.warning-message', _thisNode).css('display', 'none');
 			}, 2000);
 		} else {
 			//Вывод предупреждения о пустом поле
-			$('.warning-message', _thisNode).get(0).innerText = 'имя тега занято';
+			$('.warning-message', _thisNode).get(0).innerText = 'Tag is already taken';
 			$('.warning-message', _thisNode).css('display', 'block');
 			_this.hideWarningTimout = setTimeout(function() {
 				$('.warning-message', _thisNode).css('display', 'none');
