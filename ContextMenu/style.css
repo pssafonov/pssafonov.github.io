@@ -1,0 +1,39 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+ul li {
+	background: white;
+	color: #5A7CA0;
+	padding: 2px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	list-style-type: none;
+}
+ul li:hover {
+	cursor: pointer;
+	color: white;
+	background: #5A7CA0;
+}
+.container {
+	margin: 0 auto;
+	padding-top: 50px;
+	color: #5A7CA0;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	width: 300px;
+}
+.has-context-menu {
+  background: rgba(90, 124, 160, 0.5);
+  height: 300px;
+  width: 300px;
+}
+.context-menu {
+	display: none;
+	float: left;
+	position: absolute;
+}
+.context-menu-subMenu > ul {
+	left: 100%;
+	margin-top: -16px;
+	position: absolute;
+	width: 100%;
+}

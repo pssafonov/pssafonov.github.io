@@ -1,0 +1,428 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url('leaguegothic-regular-webfont.eot');
+    src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('leaguegothic-regular-webfont.woff') format('woff'),
+         url('leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('leaguegothic-regular-webfont.svg#league_gothic_italicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background: url("../img/background.jpg");
+}
+.container {
+	margin: 0 auto;
+	min-width: 960px;
+	width: 50%;
+}
+
+/*Header*/
+
+	/*Logo*/
+header {
+	margin: 40px 0 85px 0;
+}
+header:after {
+	content: "";
+	display: block;
+	clear:both;
+}
+.logo {
+	float: left;
+	text-transform: uppercase;
+}
+.logo a {
+	text-decoration: none;
+}
+.logo span {
+	display: block;
+}
+.name {
+	color: #D03749;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+.logo-capture {
+	color: #898886;
+	font-family: 'League Gothic', Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+	font-size: 48px;
+	height: 44px;
+	border-bottom: 4px solid #898886;
+}
+
+	/*Menu*/
+.menu {
+	margin-top: 27px;
+	float: right;
+	font-family: 'League Gothic', Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;	
+	font-size: 24px;
+	text-transform: uppercase;
+}
+.menu li {
+	display: inline-block;
+	margin: 0 0 0 8px;
+	padding: 0 4px;
+}
+.menu a {
+	color: #BFBEBC;	
+	text-decoration: none;
+}
+.menu .active, .menu li:hover {
+	border-bottom: 3px solid #898886;
+	line-height: 16px;
+	padding-bottom: 6px;
+}
+.menu .active a, .menu a:hover {
+	color: #898886;
+}
+/*Intro*/
+.intro {
+	color: #8C8C8C;
+	margin: 0 0 100px 0;
+	font-family: 'Myriad pro', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
+	font-size: 54px;
+	text-align: center;
+}
+.hello {
+	font-family: 'Myriad pro', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
+	font-size: 60px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-shadow: -1px 0px #3C3C3C, 1px 0 #A6A6A6; 
+}
+/*Resume*/
+.resume {
+	margin-bottom: 90px;
+	font-size: 0;
+}
+	/*About me*/
+.about-me {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+.about-me h2 {
+	color: #D03749;
+	border-bottom: 4px solid #E0DFDB;
+	margin: 0 10px 20px 0 ;
+	font-family: 'League Gothic', Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;	
+	font-size: 46px;
+	padding-left: 10px;
+	text-transform: uppercase;
+}
+.about-me-foto {
+	height: 105px;
+	margin: 0 20px 0 10px;
+	float: left;
+}
+.about-me p {
+	color: #918F90;
+	margin-right: 10px;
+	line-height: 1.5;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+	/*Skills*/
+.skills {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+.skills h2 {
+	color: #D03749;
+	border-bottom: 4px solid #E0DFDB;
+	margin: 0 0 0 10px ;
+	font-family: 'League Gothic', Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;	
+	font-size: 46px;
+	padding-left: 10px;
+	text-transform: uppercase;
+}
+.web, .graph {
+	display: inline-block;
+	margin-top: 16px;
+	vertical-align: top;
+	width: 50%;
+}
+.web h2, .graph h2 {
+	border: none;
+	color: #8C8C8C;
+	font-size: 26px;
+}
+.web ul, .graph ul {
+	margin-top: 9px;
+}
+.web li, .graph li {
+	color: #918F90;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	line-height: 6px;
+	margin-bottom: 12px;
+}
+.web li:before, .graph li:before {
+	content: "•";
+	color: #D86375;
+	font-size: 16px;
+	margin: 0 5px 0 25px;
+}
+/*My Work*/
+.header-work p {
+	float: left;
+	color: #D03749;
+	font-family: 'League Gothic', Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;	
+	font-size: 46px;
+	padding-left: 10px;
+	text-transform: uppercase;
+}
+.header-work {
+	border-bottom: 4px solid #E0DFDB;
+	margin: 0 0 20px 0 ;
+}
+.header-work:after{
+	content: "";
+	display: block;
+	clear:both;
+}
+.header-work ul {
+	margin: 22px 4px 0 0;
+	float: right;
+}
+.header-work li {
+	display: inline-block;
+	margin-left: 9px;
+}
+.header-work ul a {
+	color: #918F90;
+	font-size: 11px;
+	font-family: Verdana, Geneva, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.header-work .active a {
+	color: #D03749;	
+}
+.header-work ul a:hover{
+	color: #D03749;
+}
+.work {
+	margin-bottom: 70px;
+}
+.row-work a {
+	text-decoration: none;
+}
+.row-work {
+	font-size: 0;
+	margin-bottom: 20px;
+}
+.work figure {
+	background: no-repeat url('../img/shadow.png') center top;
+	text-align: center;
+	display: inline-block;
+	width: 25%;
+}
+.work span {
+	display: block;
+	color: #918F90;
+	margin-top: 10px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+/*Contact*/
+.contact {
+	font-size: 0;
+
+}
+.contact > h2 {
+	color: #D03749;
+	border-bottom: 4px solid #E0DFDB;
+	margin: 0 0 20px 0 ;
+	font-family: 'League Gothic', Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;	
+	font-size: 46px;
+	text-transform: uppercase;
+	text-indent: 10px;
+}
+/*Form*/
+.say-hi h2, .say-hi .form {
+	margin: 0 10px;
+}
+.say-hi h2 {
+	border: none;
+	color: #8C8C8C;
+	font-size: 26px;
+	font-family: 'League Gothic', Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;	
+	text-transform: uppercase;
+}
+.say-hi {
+	display: inline-block;
+	vertical-align: top;	
+	width: 50%;
+}
+/*Name E-mail*/
+.form-name p, .form-email p, .form-message p {
+	margin: 18px 0 5px 0;
+}
+.form-name-container, .form-email-container{
+	display: inline-block;
+	width: 50%;
+}
+.form-name, .form-email {
+	color: #918F90;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+.form-name {
+	margin-right: 10px;
+}
+.form-email {
+	margin-left: 10px;
+}
+.form-name input, .form-email input{
+	background: #e8e8e8;
+	border: none;
+	box-shadow: 1px 1px 0px 0px #bababa inset, -1px -1px 0px 0px #f9f8f6 inset;
+	color: #918F90;
+	height: 33px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	text-indent: 5px;
+	width: 100%;
+}
+/*Message*/
+.form-message {
+	color: #918F90;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	width: 100%;	
+}
+.form-message textarea {
+	background: #e8e8e8;
+	border: none;
+	box-shadow: 1px 1px 0px 0px #bababa inset, -1px -1px 0px 0px #f9f8f6 inset;
+	color: #918F90;
+	display: block;
+	height: 116px;
+	resize: none;
+	padding: 0px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	width: 100%;
+}
+/*Send button*/
+.form-send input {
+	background: linear-gradient(to top, #bc5656, #df7b7b);
+	border-top: 2px solid #e48f8f;
+	border-right: 2px solid #b05252;
+	border-bottom: 2px solid #9d4848;
+	border-left: 2px solid #b05252; 
+	color: white;
+	margin: 20px 0 40px 0;
+	height: 36px;
+	font-size: 26px;
+	font-family: 'League Gothic', Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;	
+	text-transform: uppercase;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.32);
+	width: 100px;
+}
+
+/*Map*/
+.info {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+.info > div {
+	margin: 0 10px;
+}
+.info h2 {
+	border: none;
+	color: #8C8C8C;
+	font-size: 26px;
+	font-family: 'League Gothic', Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;	
+	text-transform: uppercase;	
+}
+.map, .address {
+	display: inline-block;
+	vertical-align: top;
+}
+.map img {
+	margin-top: 18px;
+	width: 238px;
+	height: 200px;
+}
+.address h2 {
+	color: #918F90;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-indent: 38px;
+	margin: 18px 0 8px 0;
+	text-transform: none;
+}
+.address p {
+	color: #918F90;
+	margin-bottom: 6px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-indent: 42px;
+}
+.address p a {
+	color: #D03749;
+}
+/*Footer*/
+footer {
+	border-top: 4px solid #E0DFDB;
+	margin-bottom: 85px;
+}
+footer section {
+	display: inline-block;
+}
+.copyright {
+	color: #918F90;
+	margin-top: 12px;
+	float: left;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-indent: 10px;
+}
+.copyright a {
+	color: #D03749;	
+}
+.socials {
+	margin: 12px 14px 0 0;
+	float: right;
+}
+.twitter, .facebook, .dribbble2, .youTube {
+	display: inline-block;
+	height: 16px;
+	margin-left: 10px;
+	width: 21px;
+}
+	/*Socials buttons*/
+.twitter {
+	background: url('../img/Twitter.png') no-repeat;
+}
+.facebook {
+	background: url('../img/Facebook.png') no-repeat;
+}
+.dribbble2 {
+	background: url('../img/Dribbble2.png') no-repeat;
+}
+.youTube {
+	background: url('../img/YouTube.png') no-repeat;
+}
+	/*Socials buttons hovered*/
+.twitter:hover {
+	background: url('../img/TwitterHover.png') no-repeat;
+}
+.facebook:hover {
+	background: url('../img/FacebookHover.png') no-repeat;
+}
+.dribbble2:hover {
+	background: url('../img/Dribbble2Hover.png') no-repeat;
+}
+.youTube:hover {
+	background: url('../img/YouTubeHover.png') no-repeat;
+}

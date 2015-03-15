@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Секундомер</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/script.js"></script>
+</head>
+<body>
+<div class="container-1"></div>
+<div class="container-2"></div>
+<div class="container-3"></div>
+	<script>
+			(function () {
+				var queryNode1 = document.querySelector('.container-1');
+				var queryNode2 = document.querySelector('.container-2');
+				var queryNode3 = document.querySelector('.container-3');
+				var Stopwatch1 = new Stopwatch(queryNode1);
+				var Stopwatch2 = new Stopwatch(queryNode2);
+				var Stopwatch3 = new Stopwatch(queryNode3);
+			} ());
+		</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Context Menu</title>
+  	<script src="script.js"></script>
+</head>
+<body>
+	<div class = "container">
+		<p>Click this area to show context menu</p>
+		<div class="has-context-menu"></div>
+		<div class="contextMenuClass"></div>
+	</div>
+	<script>
+			(function () {
+				var menuStucture = [{
+					title: "File",
+					action: function() {
+						console.log("open file");
+					}
+				}, {
+					title: "Edit",
+					action: function() {
+						console.log("edit content");
+					}
+				}, {
+					title: "More stuff",
+					submenu: [{
+						title: "Send by email",
+						action: function() {
+							console.log("emailed");
+						}
+					}, {
+						title: "Send via skype",
+						action: function() {
+							console.log("skyped");
+						}
+					}]
+				}, {
+					title: "Read",
+					action: function() {
+						console.log("readed");
+					}
+				}, {
+					title: "Write",
+					submenu: [{
+						title: "Talk",
+						action: function() {
+							console.log("talked");
+						}
+					}, {
+						title: "Hear",
+						action: function() {
+							console.log("heared");
+						}
+					}]
+				}];
+				//Создание нового экземпляра
+				var queryNode = document.querySelector('.has-context-menu');
+				var contextMenu = new ContextMenu(queryNode, menuStucture);
+			} ());
+		</script>
+</body>
+</html>
