@@ -22,19 +22,46 @@
         <h5 class="view"><a href="https://github.com/pssafonov">View My GitHub Profile</a></h5>
 
       </header>
-      <section>
-        <h1>Some of my work</h1>
-
+<section>
+	<h1>Some of my works</h1>
 <hr>
 <h2>
-<a id="designer-templates" class="anchor" href="#tagslist" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tag's List</h2>
+<a id="designer-templates" class="anchor" href="#tagslist" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tag's List
+</h2>
 <a href="/tagslist" target="_blank">View in new tab</a> | <a href="https://github.com/pssafonov/pssafonov.github.io/tree/master/tagslist" target="_blank">View source</a>
 <br><br>
 <p class="description">Задачей было cоздать виджет TagList.</p>
 <p class="description">Виджет может переключаться из режима "редактирования" в режим "просмотра". Для переключения используется одна кнопка. Кнопка меняет свой текст в зависимости от режима. Он может быть инициализирован с предопределенным списком тегов, который передается опциональным аргументом.</p>
 <a href="/tagslist" target="_blank"><img src="img/tags_list.jpg" alt="Tag's List"></a>
 <p class="description">В режиме просмотра теги выглядят как список тегов (один за другим). На странице может быть сколько угодно виджетов TagList. Также в режиме редактирования теги можно удалять (рядом с тегами появляется крестик удаления).</p>
-<p class="description">Для добавления тегов используется поле ввода с кнопкой "Add". После добавления тега поле ввода очищается. Добавить уже существующий тег нельзя. Пробелы с концов строки не должны влиять на тег.</p>
+<p class="description">Для добавления тегов используется поле ввода с кнопкой "Add". После добавления тега поле ввода очищается. Добавить уже существующий тег нельзя. Пробелы с концов строки не влияют на тег.</p>
+<hr>
+
+<h2>
+<a id="designer-templates" class="anchor" href="#stopwatch" aria-hidden="true"><span class="octicon octicon-link"></span></a>Stopwatch
+</h2>
+<a href="/timer" target="_blank">View in new tab</a> | <a href="https://github.com/pssafonov/pssafonov.github.io/tree/master/timer" target="_blank">View source</a>
+<br><br>
+<p class="description">Необходимо было реализовать виджет "Cекундомер".</p>
+<p class="description">Кнопки "Stop", "Start" (одна и та же кнопка), "Reset", "Lap". Секундомер работает с точностью до миллисекунд. Когда он запущен, показывается время в формате чч:мм:сс:мс. Нажатие на кнопку "Stop" останавливает ход секундомера. Кнопка "Lap" добавляет текущее значение секундомера в список результатов. Элементы из списка результатов можно удалять поштучно.</p>
+<a href="/timer" target="_blank"><img src="img/timer.jpg" alt="Stopwatch"></a>
+<p class="description">Кнопка "Reset" останавливает секундомер, если тот бежит, сбрасывает значение в нули, убирает все результаты, если такие есть. "Lap" работает одинаково для остановленного и запущенного секундомеров.</p>
+<p class="description">Управление с клавиатуры: S - Start/Stop, L - Lap, R - Reset.</p>
+<p class="description">Если на странице несколько секундомеров, с клавиатуры управляется тот, над последним из которых находилась мышка.</p>
+<hr>
+
+<h2>
+<a id="designer-templates" class="anchor" href="#slider" aria-hidden="true"><span class="octicon octicon-link"></span></a>Slider
+</h2>
+<a href="/slider" target="_blank">View in new tab</a> | <a href="https://github.com/pssafonov/pssafonov.github.io/tree/master/slider" target="_blank">View source</a>
+<br><br>
+<p class="description">Реализован слайдер.</p>
+<p class="description">Слайдер состоит из фиксированного количества слайдов (4 шт.), изображения имеют одинаковый заранее известный размер. Переход между слайдами анимирован.</p>
+<p class="description">При клике на кнопку слева происходит переход к соответствующему слайдеру. Сразу же после инициализации у слайдера включается режим автопрокрутки: показ следующего слайда каждые 2 секунды.</p>
+<a href="/slider" target="_blank"><img src="img/slider.jpg" alt="Slider"></a>
+<p class="description">Если пользователь кликнул на одну из кнопок, перейдя к слайду, автопрокрутка отключается, а запускается заново через 5 секунд после последнего клика пользователя по кнопке. Автопрокрутка циклическая: с последнего слайда происходит переход к первому.</p>
+<p class="description">На странице можно разместить несколько слайдеров.  Слайдер работает в IE9+. Не использовались никакие готовые плагины, только самописный код</p>
+<hr>
 
       </section>
       <footer>
